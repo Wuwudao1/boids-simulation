@@ -4,14 +4,14 @@ import math
 
 # ……开始了。别眨眼。
 pygame.init()
-WIDTH, HEIGHT = 800, 600  # 画布大小，别太小，鸟儿飞不开
+WIDTH, HEIGHT = 1000, 800  # 画布大小，别太小，鸟儿飞不开
 screen = pygame.display.set_mode((WIDTH, HEIGHT))
 clock = pygame.time.Clock()
 
 # 配置参数，太多就乱，太少就寂寞
-NUM_BOIDS = 30           # 鸟的数量，别太贪心
+NUM_BOIDS = 60           # 鸟的数量，别太贪心
 MAX_SPEED = 4            # 飞行速度上线，不能太疯
-NEIGHBOR_DIST = 50       # 感知范围，太远就冷漠，太近就窒息
+NEIGHBOR_DIST = 80       # 感知范围，太远就冷漠，太近就窒息
 
 class Boid:
     def __init__(self):
